@@ -23,6 +23,7 @@ html, body{
 
 /* NAVIGATION PAGE CSS */
 
+
 .navigation-page{
     background-color: black;
     color: white;
@@ -69,6 +70,14 @@ html, body{
     font-size: 1.5vw;
     line-height: 0;
     font-weight: 100;
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+.nav-logo-description h3:hover{
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+    letter-spacing: 2px;
 }
 
 .nav-logo-description p{
@@ -110,6 +119,7 @@ html, body{
 
 /* LANDING PAGE CSS */
 
+
 .landing-page{
     background-image: url(img/main-background.jpg);
     background-attachment: fixed;
@@ -120,9 +130,10 @@ html, body{
 
 .landing-description{
     text-align: center;
-    color: black;
+    color: white;
     padding-top: 10%;
     padding-bottom: 15%;
+    background: rgba(50, 50, 50, .5);
 }
 
 .landing-page h1{
@@ -151,6 +162,7 @@ html, body{
 
 /* ABOUT PAGE CSS */
 
+
 .about-page{
     display: flex;
     flex-direction: row;
@@ -168,6 +180,8 @@ html, body{
 }
 
 .about-description h1{
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
     font-weight: 100;
     font-size: 4vw;
     line-height: 0;
@@ -192,11 +206,9 @@ html, body{
     filter: grayscale(100%);
 }
 
-.about-description p{
-    font-size: 1.1vw;
-}
 
 /* WORK PAGE CSS */
+
 
 .work-page{
     display: flex;
@@ -218,6 +230,8 @@ html, body{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     position: relative;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
 }
 
 .overlay{
@@ -232,6 +246,8 @@ html, body{
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
 }
 
 .overlay h2{
@@ -245,12 +261,14 @@ html, body{
 }
 
 .work-images:hover img{
-    -webkit-transition: .5s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
     opacity: .4;
 }
 
 .work-images:hover .overlay{
-    -webkit-transition: .7s ease;
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
     opacity: .9;
 }
 
@@ -263,6 +281,8 @@ html, body{
 }
 
 .work-description h1{
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
     font-size: 4vw;
     font-weight: 100;
     line-height: 0;
@@ -277,7 +297,9 @@ html, body{
     font-size: 1.1vw;
 }
 
+
 /* CONTACT PAGE CSS */
+
 
 .contact-page{
     font-family: "Shree Devanagari 714", sans-serif;
@@ -293,6 +315,8 @@ html, body{
 }
 
 .contact-description h1{
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
     font-size: 4vw;
     font-weight: 100;
     line-height: 0;
@@ -325,9 +349,35 @@ html, body{
     cursor: pointer;
 }
 
+
 /* FUN EFFECTS */
+
 
 .contact-page h1:hover, .work-page h1:hover, .about-page h1:hover{
     font-size: 5vw;
+    transition: all .5s ease;
     -webkit-transition: all .5s ease;
+}
+
+.about-description p{
+    font-size: 1.1vw;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.about-description p:hover span{
+    text-decoration: underline;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.work-description span{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.work-description p:hover span{
+    text-decoration: underline;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
